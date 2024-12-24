@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <>
-            <section id="profile" className="flex flex-col md:flex-row md:space-x-24 items-center justify-center py-16 bg-white h-screen">
+            <section id="profile" className="flex flex-col md:flex-row md:space-x-24 items-center justify-center py-16 bg-white min-h-screen">
                 <div className="section__pic-container mb-8">
                     <img src={ProfileImage} alt="profile picture" className=" w-52 h-52 md:w-[500px] md:h-[500px]" />
                 </div>
                 <div className="text-center items-center">
-                    <p className="text-gray-600 mb-2 text-2xl">Hello, I&apos;m</p>
-                    <h1 className="text-5xl font-bold text-gray-800 mb-2">Sagar C Mannannavar</h1>
-                    <p className="text-gray-600 mb-4 text-xl">Final Year Computer Science Student | BMSCE</p>
-                    <p className="text-gray-600 mb-4 text-xl">Upcoming Intern at HPE</p>
+                    <p className="text-gray-600 mb-2 text-xl md:text-2xl">Hello, I&apos;m</p>
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-2">Sagar C Mannannavar</h1>
+                    <p className="text-gray-600 mb-4 text-l md:text-xl ">Final Year Computer Science Student | BMSCE</p>
+                    <p className="text-gray-600 mb-4 text-l md:text-xl">Upcoming Intern at HPE</p>
                     <div className="flex justify-center space-x-4 mb-4">
                         <button
                             className="bg-blue-600 text-white px-4 py-2 rounded"

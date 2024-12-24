@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className='sticky top-0'>
       <nav className="flex justify-between items-center pt-14 pb-8 px-12 bg-white shadow-md">
-        <div className="text-2xl font-bold"><Link to='/'>Sagar C Mannannavar</Link></div>
+        <div className="text-xl md:text-2xl font-bold"><Link to='/'>Sagar C Mannannavar</Link></div>
         <ul className="hidden md:flex space-x-8 text-lg">
           <li><Link to="/" className="hover:text-gray-700">Home</Link></li>
           <li><Link to="/about" className="hover:text-gray-700">About</Link></li>
