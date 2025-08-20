@@ -1,72 +1,74 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import ProfileImage from "./../assets/sagarcm.jpg";
-import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Home = () => {
     return (
-        <motion.section
-            id="profile"
-            className="flex flex-col md:flex-row md:space-x-24 items-center justify-center py-16 bg-white h-[calc(100vh-110px)] md:h-[calc(100vh-90px)]"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4 }}
-        >
-            {/* Profile Image */}
-            <motion.div
-                className="mb-8"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
+        <section id="home" className="scroll-mt-16">
+            <motion.section
+                id="profile"
+                className="flex flex-col md:flex-row md:space-x-24 items-center justify-center py-16 bg-white h-[calc(100vh-110px)] md:h-[calc(100vh-90px)]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4 }}
+                viewport={{ once: false, amount: 0.2 }} 
             >
-                <img
-                    src={ProfileImage}
-                    alt="profile picture"
-                    className="w-52 h-52 rounded-3xl md:w-96 md:h-96 xl:w-[500px] xl:h-[500px] shadow-lg"
-                />
-            </motion.div>
+                {/* Profile Image */}
+                <motion.div
+                    className="mb-8"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                    <img
+                        src={ProfileImage}
+                        alt="profile picture"
+                        className="w-52 h-52 rounded-3xl md:w-96 md:h-96 xl:w-[500px] xl:h-[500px] shadow-lg"
+                    />
+                </motion.div>
 
-            {/* Text Section */}
-            <motion.div
-                className="text-center space-y-4 md:space-y-6"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
-            >
-                <div className="text-gray-600 text-xl md:text-2xl">Hello, I&apos;m</div>
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Sagar C Mannannavar</h1>
-                <div className="text-gray-600 text-lg md:text-xl">Final-year CSE undergraduate | BMSCE &apos;25</div>
-                <div className="text-gray-600 text-lg md:text-xl">Intern @HPE</div>
+                {/* Text Section */}
+                <motion.div
+                    className="text-center space-y-4 md:space-y-6"
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                >
+                    <div className="text-gray-600 text-xl md:text-2xl">Hello, I&apos;m</div>
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Sagar C Mannannavar</h1>
+                    <div className="text-gray-600 text-lg md:text-xl">CSE undergraduate | BMSCE &apos;25</div>
+                    <div className="text-gray-600 text-lg md:text-xl">Software Engineer (Systems) @HPE</div>
 
-                {/* Buttons */}
-                <div className="flex justify-center space-x-4">
-                    <motion.a
-                        href="https://drive.google.com/file/d/1zrru6onNMamfZd1PQPLTfG7Cxqsmy0h5/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-blue-600 text-white px-4 py-2 rounded shadow-md hover:bg-blue-700 transition"
-                        whileHover={{ scale: 1.05 }}
-                    >
-                        Download CV
-                    </motion.a>
-                    <Link
-                        to="/about"
-                        className="bg-gray-800 text-white px-4 py-2 rounded shadow-md hover:bg-gray-900 hover:scale-[1.05] transition"
-                    >
-                        Contact Info
-                    </Link>
-                </div>
+                    {/* Buttons */}
+                    <div className="flex justify-center space-x-4">
+                        <motion.a
+                            href="https://drive.google.com/file/d/1zrru6onNMamfZd1PQPLTfG7Cxqsmy0h5/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-blue-600 text-white px-4 py-2 rounded shadow-md hover:bg-blue-700 transition"
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            Download CV
+                        </motion.a>
+                        <a
+                            href="#about"
+                            className="bg-gray-800 text-white px-4 py-2 rounded shadow-md hover:bg-gray-900 hover:scale-[1.05] transition"
+                        >
+                            Contact Info
+                        </a>
+                    </div>
 
-                {/* Social Icons */}
-                <div className="flex justify-center space-x-6 md:space-x-8 p-2">
-                    <SocialIcon href="https://www.linkedin.com/in/sagar-c-mannannavar-08a002251" icon={<FaLinkedin />} />
-                    <SocialIcon href="https://github.com/sagarcm13/" icon={<FaGithub />} />
-                    <SocialIcon href="https://leetcode.com/u/sagar_c_mannannavar/" icon={<SimpleIconsLeetcode  />} />
-                    <SocialIcon href="https://www.instagram.com/sagar_cm6/" icon={<FaInstagram />} />
-                </div>
-            </motion.div>
-        </motion.section>
+                    {/* Social Icons */}
+                    <div className="flex justify-center space-x-6 md:space-x-8 p-2">
+                        <SocialIcon href="https://www.linkedin.com/in/sagar-c-mannannavar-08a002251" icon={<FaLinkedin />} />
+                        <SocialIcon href="https://github.com/sagarcm13/" icon={<FaGithub />} />
+                        <SocialIcon href="https://leetcode.com/u/sagar_c_mannannavar/" icon={<SimpleIconsLeetcode />} />
+                        <SocialIcon href="https://www.instagram.com/sagar_cm6/" icon={<FaInstagram />} />
+                    </div>
+                </motion.div>
+            </motion.section>
+        </section>
     );
 };
 
