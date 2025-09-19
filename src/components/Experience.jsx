@@ -3,6 +3,13 @@ import { motion } from "framer-motion";
 const Experience = () => {
     const experiences = [
         {
+            title: "Software Engineering Intern @HPE",
+            techStack: "React, Next.js",
+            project: "Internal Portal Migration",
+            duration: "Feb 2025 - Aug 2025",
+            description: "Worked on a proof of concept (POC) to migrate an existing React-based internal portal to Next.js to improve performance, SEO, and backend efficiency. Implemented SEO-friendly URL patterns and applied Next.js caching techniques to reduce backend load. Successfully rebuilt the portal in Next.js, enhancing scalability and user experience."
+        },
+        {
             title: "Freelance Frontend Developer",
             techStack: "React, Vercel",
             project: "Tridala Insights",

@@ -4,7 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa";
 const About = () => {
   const skills = [
     "Proficient in C, Java, JavaScript",
-    "React, Node.js, Express.js, Spring Boot",
+    "React, Next.js, Node.js, Express.js, Spring Boot",
     "Microsoft Azure (VMs), AWS (EC2)",
     "MongoDB, PostgreSQL, Cloud Firestore, Neo4J",
     "Blockchain & Smart Contracts",
@@ -45,11 +45,7 @@ const About = () => {
               Introduction
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I am a final-year Computer Science student at BMS College of
-              Engineering, Bengaluru. Passionate about software development, I
-              am eager to apply my knowledge, enhance my technical skills, and
-              contribute to innovative and efficient solutions within a
-              collaborative team.
+              I am a Computer Science student at BMS College of Engineering, Bengaluru, with a strong interest in software development. Currently, I work at Hewlett Packard Enterprise (HPE) as a Software Engineering Systems professional, after completing my internship there. My experience has strengthened my technical expertise, given me hands-on exposure to large-scale projects, and enabled me to contribute to efficient software solutions. I aim to further enhance my skills and make a meaningful impact through innovation and collaboration.
             </p>
           </motion.div>
 
@@ -63,7 +59,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
           >
             <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
-            <ul className="text-lg text-gray-600 space-y-3">
+            <ul className="text-lg text-gray-600 space-y-6 mt-6">
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-blue-600" />
                 <span>sagarcm13@gmail.com</span>

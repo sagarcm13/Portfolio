@@ -37,13 +37,13 @@ const Home = () => {
                 >
                     <div className="text-gray-600 text-xl md:text-2xl">Hello, I&apos;m</div>
                     <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Sagar C Mannannavar</h1>
-                    <div className="text-gray-600 text-lg md:text-xl">CSE undergraduate | BMSCE &apos;25</div>
+                    <div className="text-gray-600 text-lg md:text-xl">CSE Graduate | BMSCE &apos;25</div>
                     <div className="text-gray-600 text-lg md:text-xl">Software Engineer (Systems) @HPE</div>
 
                     {/* Buttons */}
                     <div className="flex justify-center space-x-4">
                         <motion.a
-                            href="https://drive.google.com/file/d/1zrru6onNMamfZd1PQPLTfG7Cxqsmy0h5/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1g6UdKf0-sUpjcnBA5LMdJoWdXL1oexTN/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 text-white px-4 py-2 rounded shadow-md hover:bg-blue-700 transition"
