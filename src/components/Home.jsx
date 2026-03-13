@@ -22,14 +22,14 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="home" className="scroll-mt-16">
-      <div className="relative hero-gradient min-h-[calc(100vh-72px)] flex items-center justify-center overflow-hidden">
+    <section id="home" className="scroll-mt-16 overflow-hidden">
+      <div className="relative hero-gradient min-h-[calc(100vh-72px)] flex items-center justify-center py-10 md:py-0">
         {/* Floating orbs */}
         <div className="orb w-72 h-72 bg-primary-500 top-20 -left-20" />
         <div className="orb w-96 h-96 bg-accent-500 bottom-20 -right-20" />
         <div className="orb w-48 h-48 bg-primary-400 top-1/2 left-1/3" />
 
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 px-6 py-16 max-w-7xl mx-auto w-full">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 px-6 py-12 md:py-16 max-w-7xl mx-auto w-full">
           {/* Profile Image */}
           <motion.div
             className="relative group"
@@ -52,7 +52,7 @@ const Home = () => {
 
           {/* Text Content */}
           <motion.div
-            className="text-center md:text-left space-y-5"
+            className="text-center md:text-left space-y-4 md:space-y-5"
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
