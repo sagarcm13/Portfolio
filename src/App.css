@@ -1,3 +1,70 @@
 /* src/App.css */
 @import 'tailwindcss/tailwind.css';
 @import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Animated gradient background for hero */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05) 0%,
+    rgba(14, 165, 233, 0.05) 50%,
+    rgba(99, 102, 241, 0.05) 100%
+  );
+  background-size: 300% 300%;
+  animation: gradient 8s ease infinite;
+}
+
+.dark .hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(14, 165, 233, 0.08) 50%,
+    rgba(99, 102, 241, 0.1) 100%
+  );
+  background-size: 300% 300%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Timeline connector */
+.timeline-connector {
+  position: relative;
+}
+
+.timeline-connector::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #6366f1, #0ea5e9);
+  opacity: 0.3;
+}
+
+/* Floating orb decoration */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.dark .orb {
+  opacity: 0.1;
+}
+
+/* Skill tag glow on hover */
+.skill-tag {
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
