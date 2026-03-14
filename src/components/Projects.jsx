@@ -5,13 +5,28 @@ import { HiChip } from "react-icons/hi";
 const Projects = () => {
   const projects = [
     {
-      projectLink: "https://github.com/sagarcm13/MERN-E-Commerce",
-      projectTitle: "MERN E-Commerce",
-      techStack: "React.js, Node.js, Express.js, MongoDB",
-      description:
-        "Developed a full-stack e-commerce platform using the MERN stack. Features include product browsing, cart management, user authentication, and an admin dashboard for order management.",
-      emoji: "🛒",
-      gradient: "from-blue-500 to-cyan-400",
+      "projectLink": "https://github.com/sagarcm13/Langchain-graph_AI_Chat_App",
+      "projectTitle": "AI Chat Assistant with RAG & LangGraph",
+      "techStack": "React, FastAPI, LangChain, LangGraph, Google Gemini API, Redis, ChromaDB, Tailwind CSS",
+      "description": "Developed a full-stack AI chatbot with a React (Vite + Tailwind) frontend and FastAPI backend. Implemented LangGraph-based multi-step workflows with LangChain to support intelligent intent detection and modular AI processing. Integrated Redis for persistent session-based chat history, ChromaDB for vector search and RAG, and external APIs for weather data and GitHub repository analysis. The system supports real-time streaming responses, portfolio website analysis, and repository README exploration.",
+      "emoji": "🧠",
+      "gradient": "from-indigo-500 to-purple-600"
+    },
+    {
+      "projectLink": "https://github.com/sagarcm13/SETS",
+      "projectTitle": "SETS - Shubam Employee Transport Services",
+      "techStack": "React.js, JavaScript, HTML, CSS",
+      "description": "Developed a modern web platform for Shubam Employee Transport Services (SETS) that showcases a car investment opportunity for investors. The application provides transparent insights into vehicle investment plans, expected monthly income, financial breakdowns, ROI comparisons, and risk management details through a responsive and visually engaging interface.",
+      "emoji": "🚗",
+      "gradient": "from-orange-500 to-red-400"
+    },
+    {
+      "projectLink": "https://github.com/sagarcm13/MERN-E-Commerce",
+      "projectTitle": "MERN Electronics E-Commerce",
+      "techStack": "React.js, Node.js, Express.js, MongoDB",
+      "description": "Developed a full-stack electronics e-commerce platform inspired by modern online stores like Chroma. Built using the MERN stack with features including secure user authentication, product browsing and filtering, cart management, and order placement. Implemented backend APIs for product and order management, MongoDB for data storage, and automated email notifications for order confirmations. The platform also includes an admin dashboard for managing products, users, and customer orders.",
+      "emoji": "🛒",
+      "gradient": "from-blue-500 to-cyan-400"
     },
     {
       projectLink: "https://github.com/sagarcm13/Event-Ticketing-Platform",
